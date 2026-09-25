@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AL STUDIO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div class="status-left">
+          <span id="current-time">14:32</span>
+          <div class="system-icons" aria-label="États système">
+            <span>◔</span>
+            <span>📶</span>
+            <span>🔋</span>
+          </div>
+        </div>
+        <button class="icon-button" aria-label="Menu">☰</button>
+      </header>
+
+      <main class="content">
+        <section class="hero">
+          <div>
+            <p class="eyebrow">Bonjour</p>
+            <h1>Solène,</h1>
+          </div>
+          <div class="weather-pill">
+            <span>Après-midi</span>
+            <strong>26°</strong>
+          </div>
+        </section>
+
+        <section class="look-card" aria-label="Look du jour">
+          <div class="card-header">
+            <div>
+              <p class="label">Look du jour</p>
+              <h2>Élégant & frais</h2>
+            </div>
+            <button class="favorite-button" aria-label="Ajouter aux favoris">♡</button>
+          </div>
+
+          <div class="model-stage">
+            <div class="model-figure">
+              <div class="head"></div>
+              <div class="neck"></div>
+              <div class="body"></div>
+              <div class="top-item top-shirt"></div>
+              <div class="bottom-item bottom-pants"></div>
+              <div class="shoe shoe-left"></div>
+              <div class="shoe shoe-right"></div>
+            </div>
+          </div>
+
+          <div class="look-details">
+            <div class="detail-tag">Cheveux lâchés</div>
+            <div class="detail-tag muted">accessoires fins</div>
+          </div>
+        </section>
+
+        <section class="calendar-section" aria-label="Calendrier hebdomadaire">
+          <div class="section-title-row">
+            <h3>Calendrier</h3>
+            <button class="ghost-button">Sept.</button>
+          </div>
+
+          <div class="calendar-grid" id="calendar-grid">
+            <button class="day-btn is-muted">Lun</button>
+            <button class="day-btn is-muted">Mar</button>
+            <button class="day-btn is-muted">Mer</button>
+            <button class="day-btn is-active">Jeu</button>
+            <button class="day-btn">Ven</button>
+            <button class="day-btn">Sam</button>
+            <button class="day-btn">Dim</button>
+          </div>
+        </section>
+
+        <button class="add-garment-btn" aria-label="Ajouter un vêtement">
+          <span class="plus">＋</span>
+          Ajouter un vêtement
+        </button>
+
+        <section class="filters-section" aria-label="Filtres de style">
+          <div class="filters-row" id="filters-row">
+            <button class="filter-pill active">Chic</button>
+            <button class="filter-pill">Décontracté</button>
+            <button class="filter-pill">Simple</button>
+            <button class="filter-pill">Sportwear</button>
+            <button class="filter-pill">Bureau</button>
+            <button class="filter-pill nav-pill" aria-label="Voir plus de styles">›</button>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
